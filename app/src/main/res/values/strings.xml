@@ -1,6 +1,27 @@
 <resources>
+    <!-- General -->
     <string name="app_name">Jobs</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="back_button">Back</string>
+
+    <!-- NavBar -->
+    <string name="nav_home">Home</string>
+
+    <!-- Home Fragment -->
+    <string name="home_title">This is Home Fragment</string>
+    <string name="go_to_research">Go To Research</string>
+
+    <!-- Research Fragment -->
+    <string name="research_title">This is Research Fragment</string>
+    <string name="go_to_result">Go To Result</string>
+
+    <!-- Result Fragment -->
+    <string name="result_title">This is Result Fragment</string>
+    <string name="go_to_sort">Go To Sort</string>
+    <string name="go_to_filter">Go To Filter</string>
+
+    <!-- Sort Fragment -->
+    <string name="sort_title">This is Sort Fragment</string>
+
+    <!-- Filter Fragment -->
+    <string name="filter_title">This is Filter Fragment</string>
 </resources>

@@ -7,19 +7,58 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="sero.com.jobs.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="sero.com.jobs.view.fragment.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_research"
+            app:destination="@id/navigation_research"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="sero.com.jobs.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_research"
+        android:name="sero.com.jobs.view.fragment.research.ResearchFragment"
+        tools:layout="@layout/fragment_research">
+        <action
+            android:id="@+id/action_navigation_research_to_navigation_result"
+            app:destination="@id/navigation_result"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="sero.com.jobs.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_result"
+        android:name="sero.com.jobs.view.fragment.result.ResultFragment"
+        tools:layout="@layout/fragment_result">
+        <action
+            android:id="@+id/action_navigation_result_to_navigation_sort"
+            app:destination="@id/navigation_sort"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/action_navigation_result_to_navigation_filter"
+            app:destination="@id/navigation_filter"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_sort"
+        android:name="sero.com.jobs.view.fragment.result.SortFragment"
+        tools:layout="@layout/fragment_sort" />
+
+    <fragment
+        android:id="@+id/navigation_filter"
+        android:name="sero.com.jobs.view.fragment.result.FilterFragment"
+        tools:layout="@layout/fragment_filter" />
+
 </navigation>

@@ -1,13 +1,14 @@
-package sero.com.jobs.ui.home
+package sero.com.jobs.view.fragment.result
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+class ResultViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+        value = "This is Result Fragment"
     }
+
     val text: LiveData<String> = _text
 }
