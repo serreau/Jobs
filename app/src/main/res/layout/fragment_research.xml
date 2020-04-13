@@ -6,35 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".view.fragment.home.HomeFragment">
 
-    <androidx.appcompat.widget.AppCompatButton
+    <ImageButton
         android:id="@+id/back_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="40dp"
-        android:text="@string/back_button"
+        android:layout_marginVertical="40dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/back_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/text_research"
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/research_input"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/back_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/research_title" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/results_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@id/research_input"
+        app:layout_constraintBottom_toTopOf="@id/go_to_result_button" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/go_to_result_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
-        android:text="@string/go_to_result"
+        android:text="@string/research_view__go_to_result"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_research" />
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

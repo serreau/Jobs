@@ -26,14 +26,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/home_title" />
+        tools:text="@string/home_view__home_title" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/go_to_research_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
-        android:text="@string/go_to_research"
+        android:text="@string/home_view__go_to_research"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_home" />

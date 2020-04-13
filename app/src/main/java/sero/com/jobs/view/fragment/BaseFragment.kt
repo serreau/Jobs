@@ -1,6 +1,7 @@
 package sero.com.jobs.view.fragment
 
 import android.app.Activity
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -28,6 +29,11 @@ abstract class BaseFragment(private val layoutId: Int) : Fragment() {
 
     protected fun hideKeyboard() {
         (activity?.getSystemService(Activity.INPUT_METHOD_SERVICE) as? InputMethodManager)?.hideSoftInputFromWindow(view?.windowToken, 0)
+    }
+
+    fun showKeyboard(view: View) {
+        if (view.requestFocus())
+            (context?.getSystemService(Context.INPUT_METHOD_SERVICE) as? InputMethodManager)?.showSoftInput(view, InputMethodManager.SHOW_IMPLICIT)
     }
 
     protected fun getRawIdentifier(name: String): Int {
