@@ -7,21 +7,21 @@
     <string name="nav_home">Home</string>
 
     <!-- Home Fragment -->
-    <string name="home_title">This is Home Fragment</string>
-    <string name="go_to_research">Go To Research</string>
+    <string name="home_view__home_title">This is Home Fragment</string>
+    <string name="home_view__go_to_research">Go To Research</string>
 
     <!-- Research Fragment -->
-    <string name="research_title">This is Research Fragment</string>
-    <string name="go_to_result">Go To Result</string>
+    <string name="research_view__go_to_result">Go To Result</string>
+    <string name="research_view__separator"> in </string>
 
     <!-- Result Fragment -->
-    <string name="result_title">This is Result Fragment</string>
-    <string name="go_to_sort">Go To Sort</string>
-    <string name="go_to_filter">Go To Filter</string>
+    <string name="result_view__result_title">This is Result Fragment</string>
+    <string name="result_view__go_to_sort">Go To Sort</string>
+    <string name="result_view__go_to_filter">Go To Filter</string>
 
     <!-- Sort Fragment -->
-    <string name="sort_title">This is Sort Fragment</string>
+    <string name="sort_view__sort_title">This is Sort Fragment</string>
 
     <!-- Filter Fragment -->
-    <string name="filter_title">This is Filter Fragment</string>
+    <string name="filter_view__filter_title">This is Filter Fragment</string>
 </resources>

@@ -25,14 +25,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="@string/result_title" />
+        tools:text="@string/result_view__result_title" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/go_to_sort_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
-        android:text="@string/go_to_sort"
+        android:text="@string/result_view__go_to_sort"
         app:layout_constraintEnd_toStartOf="@+id/go_to_filter_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_result" />
@@ -43,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
-        android:text="@string/go_to_filter"
+        android:text="@string/result_view__go_to_filter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/go_to_sort_button"
         app:layout_constraintTop_toBottomOf="@+id/text_result" />

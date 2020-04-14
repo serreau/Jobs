@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General -->
+    <string name="app_name">Jobs</string>
+    <string name="back_button">Retour</string>
+
+    <!-- NavBar -->
+    <string name="nav_home">Accueil</string>
+
+    <!-- Home Fragment -->
+    <string name="home_view__home_title">Ceci est le fragment Accueil</string>
+    <string name="home_view__go_to_research">Aller à recherche</string>
+
+    <!-- Research Fragment -->
+    <string name="research_view__go_to_result">Rechercher</string>
+    <string name="research_view__separator">" dans "</string>
+
+    <!-- Result Fragment -->
+    <string name="result_view__result_title">Ceci est le fragment de résultat</string>
+    <string name="result_view__go_to_sort">Aller au tri</string>
+    <string name="result_view__go_to_filter">Aller au filtre</string>
+
+    <!-- Sort Fragment -->
+    <string name="sort_view__sort_title">Ceci est le fragment de tri</string>
+
+    <!-- Filter Fragment -->
+    <string name="filter_view__filter_title">Ceci est le fragment de filtre</string>
+</resources>

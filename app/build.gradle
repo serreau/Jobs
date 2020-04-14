@@ -57,4 +57,12 @@ dependencies {
     // Navigation
     implementation "androidx.navigation:navigation-fragment-ktx:$rootProject.nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$rootProject.nav_version"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:2.8.1"
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
+
+    // Interceptor
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+
 }
