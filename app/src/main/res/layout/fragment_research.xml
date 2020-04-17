@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.fragment.home.HomeFragment">
+    tools:context=".ui.fragment.home.HomeFragment">
 
     <ImageButton
         android:id="@+id/back_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginVertical="40dp"
-        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:src="@drawable/ic_arrow_back"
         android:backgroundTint="@android:color/transparent"
         android:contentDescription="@string/back_button"
         app:layout_constraintStart_toStartOf="parent"

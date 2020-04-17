@@ -1,14 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- General -->
     <string name="app_name">Jobs</string>
     <string name="back_button">Back</string>
+    <string name="default_error_msg">Oops…\nAn error occurred</string>
+    <string name="no_data_msg">No result found</string>
+    <string name="network_error_msg">Network error…\nTry again later</string>
 
     <!-- NavBar -->
     <string name="nav_home">Home</string>
 
     <!-- Home Fragment -->
-    <string name="home_view__home_title">This is Home Fragment</string>
-    <string name="home_view__go_to_research">Go To Research</string>
+    <string name="home_fragment__search_view_hint">Search a domain or an activity</string>
+    <string name="home_fragment__job_title">Jobs that you may find interesting…</string>
 
     <!-- Research Fragment -->
     <string name="research_view__go_to_result">Go To Result</string>
@@ -24,4 +28,11 @@
 
     <!-- Filter Fragment -->
     <string name="filter_view__filter_title">This is Filter Fragment</string>
+
+    <!-- Category -->
+    <string name="computer_science">Computer Science</string>
+    <string name="gardening">Gardening</string>
+    <string name="manual_labor">Manual Labor</string>
+    <string name="shopping">Shopping</string>
+    <string name="child_care">Child Care</string>
 </resources>

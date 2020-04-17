@@ -1,11 +1,10 @@
 package sero.com.jobs.data.repository
 
-import sero.com.jobs.data.remote.JobRemote
-import sero.com.jobs.utils.tools.retrofit
+import sero.com.jobs.data.helper.RetrofitHelper
 
 object JobRepository {
-    private val remote = retrofit.create(JobRemote::class.java)
+    private val remote = RetrofitHelper.create()
 
-    suspend fun getResearchResults(text : String) = remote.getResearchResults(text)
+    suspend fun getResearchResults(text: String) = remote.getResearchResults(text)
 }
 

@@ -3,13 +3,16 @@
     <!-- General -->
     <string name="app_name">Jobs</string>
     <string name="back_button">Retour</string>
+    <string name="default_error_msg">Oops…\nUne erreur est survenue</string>
+    <string name="no_data_msg">Aucun résultat n\'a été trouvé</string>
+    <string name="network_error_msg">Erreur réseau…\nVeuillez réessayer plus tard</string>
 
     <!-- NavBar -->
     <string name="nav_home">Accueil</string>
 
     <!-- Home Fragment -->
-    <string name="home_view__home_title">Ceci est le fragment Accueil</string>
-    <string name="home_view__go_to_research">Aller à recherche</string>
+    <string name="home_fragment__search_view_hint">Recherche un domaine ou une activité</string>
+    <string name="home_fragment__job_title">Jobs qui pourrait vous intéresser…</string>
 
     <!-- Research Fragment -->
     <string name="research_view__go_to_result">Rechercher</string>
@@ -25,4 +28,11 @@
 
     <!-- Filter Fragment -->
     <string name="filter_view__filter_title">Ceci est le fragment de filtre</string>
+
+    <!-- Category -->
+    <string name="computer_science">Informatique</string>
+    <string name="gardening">Jardinage</string>
+    <string name="manual_labor">Bricolage</string>
+    <string name="shopping">Courses</string>
+    <string name="child_care">Garde d\'enfants</string>
 </resources>

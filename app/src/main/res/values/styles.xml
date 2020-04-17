@@ -2,20 +2,57 @@
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="windowNoTitle">true</item>
-        <item name="android:actionBarSize">60dp</item>
-        <item name="android:textSize">14sp</item>
-        <item name="colorPrimaryDark">@android:color/black</item>
-        <item name="bottomNavColor">@color/bottom_nav_color</item>
+        <item name="android:actionBarSize">50dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/horizon</item>
     </style>
 
-    <style name="LightTheme" parent="@style/AppTheme">
-        <item name="colorPrimary">@color/light_primary</item>
-        <item name="colorAccent">@color/light_accent</item>
+    <style name="DefaultTheme" parent="@style/AppTheme">
+        <item name="colorPrimary">@color/default_primary</item>
+        <item name="colorPrimaryDark">@color/default_primary_dark</item>
+        <item name="colorAccent">@color/default_accent</item>
+        <item name="colorBackground">@color/default_background</item>
+        <item name="colorSurface">@color/default_surface</item>
+        <item name="colorTextOnPrimary">@color/default_text_on_primary</item>
+        <item name="colorTextOnAccent">@color/default_text_on_accent</item>
+        <item name="colorTextOnBackground">@color/default_text_on_background</item>
+        <item name="colorTextOnSurface">@color/default_text_on_surface</item>
+        <item name="colorSecondaryTextOnSurface">@color/default_secondary_text_on_surface</item>
+        <item name="colorShimmerBackground">@color/default_shimmer_background</item>
+        <item name="colorShimmerView">@color/default_shimmer_view</item>
+        <item name="bottomNavColor">@color/default_bottom_nav_color</item>
+        <item name="android:windowBackground">@color/default_primary</item>
     </style>
 
     <style name="DarkTheme" parent="@style/AppTheme">
         <item name="colorPrimary">@color/dark_primary</item>
+        <item name="colorPrimaryDark">@color/dark_primary_dark</item>
         <item name="colorAccent">@color/dark_accent</item>
+        <item name="colorBackground">@color/dark_background</item>
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="colorTextOnPrimary">@color/dark_text_on_primary</item>
+        <item name="colorTextOnAccent">@color/dark_text_on_accent</item>
+        <item name="colorTextOnBackground">@color/dark_text_on_background</item>
+        <item name="colorTextOnSurface">@color/dark_text_on_surface</item>
+        <item name="colorSecondaryTextOnSurface">@color/dark_secondary_text_on_surface</item>
+        <item name="colorShimmerBackground">@color/dark_shimmer_background</item>
+        <item name="colorShimmerView">@color/dark_shimmer_view</item>
+        <item name="bottomNavColor">@color/dark_bottom_nav_color</item>
+        <item name="android:windowBackground">@color/dark_primary</item>
+    </style>
+
+    <style name="RectangularPadding">
+        <item name="android:paddingStart">@dimen/large_padding</item>
+        <item name="android:paddingTop">@dimen/small_padding</item>
+        <item name="android:paddingEnd">@dimen/large_padding</item>
+        <item name="android:paddingBottom">@dimen/small_padding</item>
+    </style>
+
+    <style name="RectangularMargin">
+        <item name="android:layout_marginStart">@dimen/large_margin</item>
+        <item name="android:layout_marginTop">@dimen/small_margin</item>
+        <item name="android:layout_marginEnd">@dimen/large_margin</item>
+        <item name="android:layout_marginBottom">@dimen/small_margin</item>
     </style>
 
 </resources>

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="sero.com.jobs.view.fragment.home.HomeFragment"
+        android:name="sero.com.jobs.ui.fragment.home.HomeFragment"
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_navigation_home_to_navigation_research"
@@ -20,7 +20,7 @@
 
     <fragment
         android:id="@+id/navigation_research"
-        android:name="sero.com.jobs.view.fragment.research.ResearchFragment"
+        android:name="sero.com.jobs.ui.fragment.research.ResearchFragment"
         tools:layout="@layout/fragment_research">
         <action
             android:id="@+id/action_navigation_research_to_navigation_result"
@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/navigation_result"
-        android:name="sero.com.jobs.view.fragment.result.ResultFragment"
+        android:name="sero.com.jobs.ui.fragment.result.ResultFragment"
         tools:layout="@layout/fragment_result">
         <action
             android:id="@+id/action_navigation_result_to_navigation_sort"
@@ -53,12 +53,12 @@
 
     <fragment
         android:id="@+id/navigation_sort"
-        android:name="sero.com.jobs.view.fragment.result.SortFragment"
+        android:name="sero.com.jobs.ui.fragment.result.SortFragment"
         tools:layout="@layout/fragment_sort" />
 
     <fragment
         android:id="@+id/navigation_filter"
-        android:name="sero.com.jobs.view.fragment.result.FilterFragment"
+        android:name="sero.com.jobs.ui.fragment.result.FilterFragment"
         tools:layout="@layout/fragment_filter" />
 
 </navigation>

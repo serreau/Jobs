@@ -65,4 +65,6 @@ dependencies {
     // Interceptor
     implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
 
+    // Shimmer
+    implementation "com.facebook.shimmer:shimmer:$rootProject.shimmer_version"
 }
