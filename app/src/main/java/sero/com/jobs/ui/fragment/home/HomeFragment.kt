@@ -8,6 +8,7 @@ import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.shimmer_fragment_home.*
 import sero.com.jobs.R
 import sero.com.jobs.data.model.Category
+import sero.com.jobs.data.model.HomeContent
 import sero.com.jobs.ui.adapter.JobSummaryAdapter
 import sero.com.jobs.ui.fragment.BaseFragment
 import sero.com.jobs.utils.extension.*
@@ -34,6 +35,7 @@ class HomeFragment : BaseFragment(R.layout.fragment_home) {
         homeViewModel = getViewModel<HomeViewModel>().initObserver(this@HomeFragment, Observer {
             handleUIState(it)
         }, Observer {
+            setupTest(it)
             val categories = it.categories.map { categoryId -> Category.fromId(categoryId) }
             theme_list?.createOrUpdate(sero.com.jobs.ui.adapter.CategoryAdapter(categories, ::onThemeClicked), categories)
             job_list?.createOrUpdate(JobSummaryAdapter(it.jobs, ::onJobClicked), it.jobs)
@@ -46,5 +48,14 @@ class HomeFragment : BaseFragment(R.layout.fragment_home) {
 
     private fun onJobClicked(title: String) {
         context?.showToast("Job = $title")
+    }
+
+    private fun setupTest(content: HomeContent) {
+        // sort usage
+        val sortType = getSortTypeFromPrefs()
+        val sortedJobs = sortType.sort(content.jobs)
+        // filter usage
+        val filterType = getFilterTypeFromPrefs()
+        val filteredJobs = filterType.filter(content.jobs)
     }
 }
